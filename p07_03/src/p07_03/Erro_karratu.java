@@ -30,6 +30,7 @@ public class Erro_karratu {
 			throw new IllegalArgumentException("Sartu behar den zenbakia positiboa izan behar du bestela ezin dezakegu erro karratua kalkulatu");
 			
 		}
+		
 	try {
 		
 	
@@ -38,6 +39,7 @@ public class Erro_karratu {
 	}catch (Exception e) {
 		
 	}	
+	teklatua.close();
 	}
 
 }
