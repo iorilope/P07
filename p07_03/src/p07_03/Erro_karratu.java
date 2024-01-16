@@ -18,28 +18,24 @@ public class Erro_karratu {
 		String z1;
 		float f1;
 		Scanner		teklatua	= new Scanner(System.in);
-		
+
 		System.out.println("Sartu zenbaki bat honen erro karratua kalkulatzeko");
-		
 		z1=	teklatua.next();
-		
 		f1		= Float.parseFloat(z1);
-		
+
 		if (f1 < 0) {
-			
 			throw new IllegalArgumentException("Sartu behar den zenbakia positiboa izan behar du bestela ezin dezakegu erro karratua kalkulatu");
+		}
+
+		try {
 			
+			double Erantzuna=Math.sqrt(f1);
+			System.out.println(Erantzuna);
+			
+		}catch (Exception e) {
 		}
 		
-	try {
-		
-	
-	double Erantzuna=Math.sqrt(f1);
-	System.out.println(Erantzuna);
-	}catch (Exception e) {
-		
-	}	
-	teklatua.close();
+		teklatua.close();
 	}
 
 }
